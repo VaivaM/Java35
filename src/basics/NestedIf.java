@@ -15,7 +15,7 @@ public class NestedIf {
         } else if (score <= 80.0f) {
             System.out.println("Score is <= 80%");
             if(score <= 60.0f){
-                System.out.println("Score is<= 60%");
+                System.out.println("Score is <= 60%");
             }else {
                 System.out.println("> 60%");
             }
