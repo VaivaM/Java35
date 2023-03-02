@@ -1,5 +1,7 @@
 package homeworks;
 
+import java.util.Scanner;
+
 public class HW5 {
     public static void main(String[] args) {
         /*      Alex is an owner of grocery store. Among many products he sells,
@@ -17,6 +19,29 @@ public class HW5 {
         amount of jam specified by Jane. Amount of jam should be read from user
         (positive int value). You can assume that there's always enough jam in Alex's shop.
         Your application should print true or false.*/
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("The amount of jam Jane asked for: ");
+        int jamAmount = scanner.nextInt();
+        int max = 6;
+
+        int x = jamAmount / 7;
+        System.out.println(x);
+
+        double z = x * 7;
+        System.out.println(z);
+
+        double b = jamAmount - z;
+        System.out.println(b);
+
+        System.out.println("Is Will able to take this amount home?");
+
+        if (b <= (max-x)){
+            System.out.println("True");
+        } else {
+            System.out.println("False");
+
+        }
 
     }
 }
