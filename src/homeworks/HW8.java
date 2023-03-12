@@ -22,6 +22,6 @@ public class HW8 {
 
         System.out.println("Average grade is: " + (total / elementArray.length));
         System.out.println("There was passed " + (elementArray.length) + " values");
-
+        System.out.println(Arrays.toString(elementArray));
     }
 }

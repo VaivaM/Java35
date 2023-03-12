@@ -19,7 +19,7 @@ public class PrintFormatting {
         double height = 192.2342534d;
         System.out.printf("%s is %.2f cm tall\n", name,height);
 
-        //Hello Bob your age is 34 and your height is 192... . Goos job Bob!
+        //Hello Bob your age is 34 and your height is 192... . Good job Bob!
         System.out.printf("Hello %1$s your age is %2$d and your height is %3$.2f cm. Good job %1s!", name, age, height);
 
 
