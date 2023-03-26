@@ -1,21 +1,29 @@
 package homeworks;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class HW14 {
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("What is the price?");
-        int originalPrice = scanner.nextInt();
+        discount(100,45);
+        discount(89,28);
 
-        System.out.println("What is the discount?");
-        float  discount = scanner.nextFloat();
+    }
 
        // Discount method
 
-        double finalPrice= ((100 - discount) * originalPrice)/100;
-        System.out.println("discount (" + originalPrice + "," + discount + ") --> " + Math.round(finalPrice*100)/100f);
+    public static float discount (float originalPrice, float discount){
+        DecimalFormat df = new DecimalFormat("0.00");
+        discount /= 100;
+        float result = originalPrice - (originalPrice * discount);
+        System.out.println("Special price: " + df.format(result));
+        System.out.printf("Special price: %.2f \n", result);
+        return result;
+
+
+//        double finalPrice= ((100 - discount) * originalPrice)/100;
+//        System.out.println("discount (" + originalPrice + "," + discount + ") --> " + Math.round(finalPrice*100)/100f);
 
     }
 
